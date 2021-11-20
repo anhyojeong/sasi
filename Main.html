@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Strong&display=swap" rel="stylesheet">
+    <title>사시사철</title>
+    <link rel="stylesheet" href="../src/maincss.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/067a21272e.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+</head>
+    <body>
+
+        <div class="bg">
+        </div>
+
+        <h1>
+            <span class="time" style="color:white; text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;">Time <br>
+                <div class="psn_time" style="text-align: center;">
+                    <span id="clock" style="color:white; font-size: 70px; text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;">-clock-</span>
+                    <span id="apm" style="color:white; font-size: 30px; text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;"  >-ampm-</span>
+                </div>
+            </span>
+            <section> <span class="weather" style="color:white; text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;">Weather</span>  <br>
+                <span class="weatherform"> <img src="" alt="" srcset="" id="weather-icon">
+                    <div id="location">-Weather Info-</div>
+                    <div class="desc">-Cloud Info-</div>
+                   <div style="font-weight: bold;"></div>
+                    <div class="c">[data-value]</div>
+                    <div class="f">[data-value]</div>
+                </span>
+            </section>
+            <span class="w_info" style="color:white; text-shadow: -1px 0 #000,0 1px #000,1px 0 #000,0 -1px #000;">Info
+                <div class="info">
+                    <div class="sunrise">No Information Available</div>
+                    <div class="sunset">No Information Available</div>
+                    <div>강수량: 
+                        <span class="cprobability">
+                            -Not_Found-
+                        </span>
+                    </div>
+                    <div>미세먼지: 
+                        <span class="pm10">
+                            -Not_Found-
+                        </span>
+                    </div>
+                    <div class="minT">-minTemp-</div>
+                    <div class="maxT">-maxTemp-</div>
+                </div>
+            </span>
+        </h1>
+        
+        <h2 onclick="Page_Main()">
+            <div  class="e101_82">사</div>
+            <div  class="e101_83">시</div>
+            <div  class="e101_84"></div>
+            <div  class="e101_85">사</div>
+            <div  class="e101_86">철</div>
+        </h2>
+
+        <form class = "search">
+            <select class = 'SelectSearch' name = 'WhichSearch'>
+                <option id = 'google' value = 'google'>Google</option>
+                <option id = 'naver' value = 'naver'>Naver</option>
+            </select>
+            <input class = 'keyword' type = 'text' name = 'search' maxlength = 255 value = "" autocomplete = "off">
+            <button class = "img-button" type = "submit" name = "click" value = "" >
+                <i class="fas fa-search"></i>
+            </button>      
+        </form>
+
+        <footer>
+            <span class="num_1" onclick="Page_Male()">
+                <span  class="e101_77">MALE</span>
+                <div  class="e101_72"><img src="../src/image/Male.png" width="100%" height="100%"></div>
+            </span>
+            <span class="num_2" onclick="Page_Female()">
+                <span  class="e101_78">FEMALE</span>
+                <div  class="e101_76"><img src="../src/image/Female.png" width="100%" height="100%"></div>
+            </span>
+            <span class="num_3" onclick="Page_Unisex()">
+                <span  class="e101_79">UNISEX</span>
+                <div  class="e101_75"><img src="../src/image/Unisex.png" width="100%" height="100%"></div>
+            </span>
+            <span class="num_4">
+                <span  class="e101_80">ITEM</span>
+                <div  class="e101_74"><img src="../src/image/Item.png" width="100%" height="100%"></div>
+            </span>
+            <span class="num_5" onclick="Page_Food()">
+                <span  class="e101_81">FOOD</span>
+                <div  class="e101_73"><img src="../src/image/Food.png" width="100%" height="100%"></div>
+            </span>
+        </footer>
+
+        <script src="../src/javascript.js"></script>
+    </body>
+</html>
